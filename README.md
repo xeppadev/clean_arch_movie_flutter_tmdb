@@ -1,16 +1,56 @@
-# clean_arch_movie_flutter
+# Clean Architecture Movie App
 
-A new Flutter project.
+## Description
+
+This app is a Clean Architecture Movie App built with Flutter, using the TMDB API. It allows users to browse and search for movies, view movie details, and discover popular movies.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with this project, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository.
+2. Install Flutter and Dart.
+3. Set up your TMDB API key.
+4. Run the app on your preferred device or emulator.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+For any further assistance, please consult the [Flutter documentation](https://docs.flutter.dev/) or reach out to the project contributors.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```plaintext
+TMDB-App/
+├── presentation/           # UI layer, Widgets, Screens, and related components
+│   ├── widgets/
+│   ├── screens/
+│   └── ...
+├── domain/                 # Business logic layer, Entities, Use cases, and Repositories Interfaces
+│   ├── entities/
+│   ├── use_cases/
+│   ├── repositories/
+│   └── ...
+├── data/                   # Data layer, Implementations of Repositories, API calls, Data sources
+│   ├── models/
+│   ├── repositories/
+│   ├── data_sources/
+│   ├── api/                # API client and services
+│   └── ...
+├── core/                   # Core utilities, constants, theme, error handling, and helpers
+│   ├── utils/
+│   ├── constants/
+│   ├── theme/
+│   ├── errors/
+│   └── ...
+├── config/                 # Configuration files, including environment variables
+│   ├── environment/
+│   └── ...
+├── main.dart               # Entry point of the application
+├── injector.dart           # Dependency injection setup
+├── pubspec.yaml            # Project dependencies and assets
+├── README.md               # Project documentation
+└── test/                   # Test files for the app
+    └── ...
+```
+
+## Screenshot
+
+ <img src="./screenshot/imagen_app_movie.png" alt="application" width="300"/>

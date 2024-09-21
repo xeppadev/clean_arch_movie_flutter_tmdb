@@ -60,7 +60,8 @@ class SearchCubit extends Cubit<SearchState> {
         emit(SearchError(message: error.message));
       }, (success) {
         _page++;
-        _searchList.addAll(success.where((search) => !_searchList.contains(search)));
+        _searchList
+            .addAll(success.where((search) => !_searchList.contains(search)));
         if (success.length < 20) {
           hasReachedMax = true;
         }

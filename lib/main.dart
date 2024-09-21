@@ -39,7 +39,7 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 part 'injector.dart';
 
 Future main() async {
-  await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: ".env.example");
   await init();
   await injector<LocalDatabase>().initialize();
   final directory = await getApplicationDocumentsDirectory();

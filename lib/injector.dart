@@ -17,7 +17,7 @@ Future<void> init() async {
     ..registerLazySingleton<VideoRemoteDataSource>(
         () => VideoRemoteDataSourceImpl(injector()))
     ..registerLazySingleton<WatchlistLocalDataSource>(
-      () => WatchlistLocalDataSourceImpl(injector()))
+        () => WatchlistLocalDataSourceImpl(injector()))
 
     // Registra TvShowUsecases
     ..registerLazySingleton<TvShowRepository>(

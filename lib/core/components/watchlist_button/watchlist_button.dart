@@ -26,7 +26,7 @@ class WatchlistButton extends StatelessWidget {
     return BlocBuilder<WatchlistCubit, WatchListState>(builder: (_, state) {
       if (state is WatchListLoaded) {
         bool isAdded =
-            state.media?.any((element) => element.id == watchlistEntity?.id) ??
+            state.media.any((element) => element.id == watchlistEntity?.id) ??
                 false;
 
         return IconButton(
